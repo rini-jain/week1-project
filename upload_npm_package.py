@@ -6,7 +6,7 @@ API_KEY = "b4036026bca68503496476c742b23da50c3542f5"  # Replace with actual API 
 OWNER = "rini-jain-RNYE"  # Your Cloudsmith organization name
 REPO_NAME = "rini"  # Your Cloudsmith repository name
 PACKAGE_FILE = "npm-package-upload-1.0.0.tgz"  # Replace with your actual package file
-
+#adding a comment
 # ✅ Step 1: Generate SHA-256 Checksum of the Package
 def generate_sha256(file_path):
     sha256_hash = hashlib.sha256()
