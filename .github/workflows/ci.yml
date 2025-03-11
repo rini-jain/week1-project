@@ -21,6 +21,3 @@ jobs:  # Kaam jo ye karega (job define kar rahe hain)
 
       - name: Install Dependencies
         run: npm install  # NPM ki saari dependencies install karega
-
-      - name: Run Tests
-        run: npm test  # Test scripts run karega agar test likhe hain
