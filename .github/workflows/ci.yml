@@ -1,23 +1,23 @@
-name: CI Pipeline  # Ye workflow ka naam hai
+name: CI Pipeline
 
-on:  # Kab chalega ye workflow?
-  push:  # Jab bhi koi naye changes push karega
-    branches:  # Ye sirf master & feature-branch pe chalega
+on:
+  push:
+    branches:
       - master
       - feature-branch
 
-jobs:  # Kaam jo ye karega (job define kar rahe hain)
+jobs:
   build:
-    runs-on: ubuntu-latest  # Linux server pe chalega ye automation
+    runs-on: ubuntu-latest
 
-    steps:  # Step-by-step kaam define karna hai
+    steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3  # GitHub se latest code pull karega
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Node.js ka version set karna hai
+          node-version: 18
 
       - name: Install Dependencies
-        run: npm install  # NPM ki saari dependencies install karega
+        run: npm install
